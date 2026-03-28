@@ -37,15 +37,23 @@ const INITIAL_PETS = [
   },
 ];
 
-export default function PetListScreen({ navigation }) {
+export default function PetListScreen({ navigation, route }) {
   // State that holds the array of pets
   const [pets, setPets] = useState([]);
 
   // useEffect with empty array [] — runs only once when screen loads
   // Simulates loading data from an API
+  // useEffect with empty array [] — loads initial sample data once
   useEffect(() => {
     setPets(INITIAL_PETS);
   }, []);
+
+  // useEffect — listens for new pets coming from RegisterPetScreen
+  useEffect(() => {
+    if (route.params?.newPet) {
+      setPets((prev) => [...prev, route.params.newPet]);
+    }
+  }, [route.params?.newPet]);
 
   // Function that renders each pet card
   const renderPetCard = ({ item }) => (
