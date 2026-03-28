@@ -1,6 +1,3 @@
-// TipsStyles.js
-// Styles for TipsScreen component
-
 import { StyleSheet } from 'react-native';
 
 const TipsStyles = StyleSheet.create({

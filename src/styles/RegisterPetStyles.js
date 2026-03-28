@@ -1,5 +1,3 @@
-// RegisterPetStyles.js
-// Styles for RegisterPetScreen component
 
 import { StyleSheet } from 'react-native';
 
