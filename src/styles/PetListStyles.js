@@ -1,4 +1,4 @@
-
+// PetListStyles.js
 // Styles for PetListScreen component
 
 import { StyleSheet } from 'react-native';
@@ -6,14 +6,15 @@ import { StyleSheet } from 'react-native';
 const PetListStyles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#f0faf0',
     padding: 16,
   },
   title: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: '#2c3e50',
+    color: '#1b5e20',
     marginBottom: 16,
+    
   },
   card: {
     backgroundColor: '#ffffff',
@@ -22,6 +23,8 @@ const PetListStyles = StyleSheet.create({
     marginBottom: 12,
     flexDirection: 'row',
     alignItems: 'center',
+    borderLeftWidth: 4,
+    borderLeftColor: '#2e7d32',
     elevation: 3,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
@@ -38,16 +41,17 @@ const PetListStyles = StyleSheet.create({
   petName: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#2c3e50',
+    color: '#1b5e20',
   },
   petSpecies: {
     fontSize: 14,
-    color: '#7f8c8d',
+    color: '#2e7d32',
     marginTop: 4,
+    fontWeight: '500',
   },
   emptyText: {
     textAlign: 'center',
-    color: '#aaa',
+    color: '#9e9e9e',
     marginTop: 40,
     fontSize: 15,
   },
