@@ -1,4 +1,4 @@
-
+// PetDetailStyles.js
 // Styles for PetDetailScreen component
 
 import { StyleSheet } from 'react-native';
@@ -6,7 +6,7 @@ import { StyleSheet } from 'react-native';
 const PetDetailStyles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#F0F4F8',
     padding: 16,
   },
   card: {
@@ -27,7 +27,7 @@ const PetDetailStyles = StyleSheet.create({
   petName: {
     fontSize: 28,
     fontWeight: 'bold',
-    color: '#2c3e50',
+    color: '#1a1a2e',
     textAlign: 'center',
     marginBottom: 24,
   },
@@ -40,17 +40,17 @@ const PetDetailStyles = StyleSheet.create({
   },
   infoLabel: {
     fontSize: 15,
-    color: '#7f8c8d',
+    color: '#9e9e9e',
     fontWeight: '500',
   },
   infoValue: {
     fontSize: 15,
-    color: '#2c3e50',
+    color: '#1a1a2e',
     fontWeight: 'bold',
   },
   favoriteButton: {
     marginTop: 24,
-    backgroundColor: '#2c3e50',
+    backgroundColor: '#4361ee',
     borderRadius: 10,
     padding: 14,
     alignItems: 'center',
@@ -65,11 +65,11 @@ const PetDetailStyles = StyleSheet.create({
     borderRadius: 10,
     padding: 14,
     alignItems: 'center',
-    borderWidth: 1,
-    borderColor: '#2c3e50',
+    borderWidth: 1.5,
+    borderColor: '#4361ee',
   },
   backButtonText: {
-    color: '#2c3e50',
+    color: '#4361ee',
     fontSize: 16,
     fontWeight: 'bold',
   },
